@@ -1,0 +1,110 @@
+Welcome to
+
+▄▀█ █▀▄ █▀█ █░█ █▀▄▀█   █▀▀ ▀█▀ █▀▄▀█   █▀ █ █▀▄▀█
+█▀█ █▄▀ █▄█ ▀▄▀ █░▀░█   █▄▄ ░█░ █░▀░█   ▄█ █ █░▀░█
+developed by xen0byt3
+==================================================================
+
+Set Hostname: TechGhost0208
+
+Select Connection Type:
+1. Ethernet
+2. WLAN
+Enter choice (1 or 2): 1
+Set IP Address (Class A only): 1
+Invalid Class A IP Address!
+Set IP Address (Class A only): 100.1.1.1
+Subnet Mask: 255.0.0.0
+
+▄▀█ █▀▄ █▀█ █░█ █▀▄▀█   █▀▀ ▀█▀ █▀▄▀█   █▀ █ █▀▄▀█
+█▀█ █▄▀ █▄█ ▀▄▀ █░▀░█   █▄▄ ░█░ █░▀░█   ▄█ █ █░▀░█
+developed by xen0byt3
+==================================================================
+[Active Website]
+https://www.sinrevilo.moc
+https://www.xeno-byte.moc
+https://www.gi4nt-tcr.moc
+
+Welcome to the adoVM CTM Terminal Simulator. Type 'help' for commands.
+
+TechGhost0208@adoVM-$: help
+
+adoVM Linux Commands:
+ip a                              - Shows your IP address, interfaces
+ip route                          - Shows your gateway
+hostname -I                       - Shows your IP address quickly
+ping {target_IP or website}       - Checks if a host is reachable
+traceroute {target_IP or website} - Shows the path packets take (routers/hops)
+netstat -tulnp                    - Shows open ports and running services
+nslookup  {target_IP or website}  - Converts domain to IP address
+dig {target_IP or website}        - Advanced DNS lookup
+nmap {target_IP or website}       - Scan a target
+nmap -sV {target_IP or website}   - Detect services + versions
+nmap -A {target_IP or website}    - Aggressive scan (OS + services)
+arp-scan --localnet               - Finds devices in your network (like WiFi users)
+tcpdump -i {net_con}              - Capture live network traffic
+curl {website}                    - Fetch web data (used in APIs & testing)
+wget {file_name}                  - Download log files
+nc {ip_address} {port}            - Connect to a port
+whois {ip_address}                - Get domain info (owner, registrar)
+shutdown                          - Shutdown xen0byt3@adoVM
+
+TechGhost0208@adoVM-$: ip a
+Ethernet -> 100.1.1.1
+TechGhost0208@adoVM-$: ip route
+{ip}.{address}.{hidden}.{by}.{xen0byt3}
+TechGhost0208@adoVM-$: hostname -I
+TechGhost0208 100.1.1.1
+TechGhost0208@adoVM-$: ping {target_IP}
+Reply from {target_IP}: bytes=32 time=100ms TTL=64
+Reply from {target_IP}: bytes=32 time=93ms TTL=64
+Reply from {target_IP}: bytes=32 time=70ms TTL=64
+Reply from {target_IP}: bytes=32 time=48ms TTL=64
+TechGhost0208@adoVM-$: traceroute {target_IP}
+
+traceroute to {target_IP}, 30 hops max, 60 byte packets
+
+1       192.168.1.222 (LAN Gateway)  19 ms  42 ms  68 ms
+2       192.168.1.59 (LAN Gateway)  16 ms  44 ms  117 ms
+3       10.0.3.197 (ISP Core Router)  8 ms  36 ms  36 ms
+4       10.0.4.46 (ISP Core Router)  17 ms  27 ms  110 ms
+5       10.0.5.149 (ISP Core Router)  24 ms  24 ms  81 ms
+6       120.224.251.126 (External Network)  5 ms  39 ms  89 ms
+7       118.232.29.113 (External Network)  11 ms  24 ms  37 ms
+8       * * * Request timed out
+9       163.102.203.141 (External Network)  14 ms  60 ms  117 ms
+
+Trace complete.
+TechGhost0208@adoVM-$: nslookup {target_IP}
+Unknown host
+TechGhost0208@adoVM-$: dig {target_IP}
+; <<>> DiG 9.18.0 <<>> {target_IP}
+;; global options: +cmd
+
+;; status: NXDOMAIN
+TechGhost0208@adoVM-$: nmap {target_IP}
+Host seems down or not found.
+TechGhost0208@adoVM-$: nmap -sV {target_IP}
+Host seems down or not found.
+TechGhost0208@adoVM-$: nmap -A {target_IP}
+Host seems down or not found.
+TechGhost0208@adoVM-$: tcpdump -i {net_con}
+
+listening on {net_con}, link-type EN10MB (Ethernet), capture size 262144 bytes
+
+15:43:43 IP 192.168.1.57 > 192.168.1.239: ICMP echo request, id 2417, seq 1, length 64
+15:43:44 IP 192.168.1.16.53 > 192.168.1.67.53: UDP, length 75
+15:43:44 IP 192.168.1.137 > 192.168.1.107: ICMP echo request, id 2626, seq 3, length 64
+15:43:45 IP 192.168.1.63 > 192.168.1.245: ICMP echo request, id 1507, seq 4, length 64
+15:43:45 IP 192.168.1.156 > 192.168.1.43: ICMP echo request, id 2066, seq 5, length 64
+15:43:46 IP 192.168.1.245.22 > 192.168.1.192.22: Flags [S], seq 6316, win 64240, length 0
+15:43:46 IP 192.168.1.24.443 > 192.168.1.178.443: UDP, length 41
+15:43:47 IP 192.168.1.120 > 192.168.1.71: ICMP echo request, id 1958, seq 8, length 64
+TechGhost0208@adoVM-$: arp-scan --localnet
+You don't have admin privileges to invoke this command
+TechGhost0208@adoVM-$: whois {ip_address}
+
+[WHOIS Lookup for {ip_address}]
+
+No match for IP address
+TechGhost0208@adoVM-$:
